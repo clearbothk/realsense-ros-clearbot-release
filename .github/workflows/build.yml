@@ -25,20 +25,20 @@ jobs:
           wget -qO - https://aptserver.clearbot.dev/pubkey | sudo apt-key add -
           echo "machine https://aptserver.clearbot.dev\nlogin $APTSERVER_USER\npassword $APTSERVER_PASSWORD" >> /etc/apt/auth.conf.d/clearbot.conf
           sudo add-apt-repository 'deb https://aptserver.clearbot.dev focal main'
-        working-directory: ./realsense2_camera
+        working-directory: ./realsense-ros-clearbot-release
       - name: Install dependencies
         run: |
           sudo apt -y update
           sudo apt install -y dh-make fakeroot opencv-libs opencv-main opencv-python opencv-dev libboost-all-dev ros-foxy-clearbot-cv-bridge
-        working-directory: ./realsense2_camera
+        working-directory: ./realsense-ros-clearbot-release
       - name: fakeroot
         run: fakeroot debian/rules binary
-        working-directory: ./realsense2_camera
+        working-directory: ./realsense-ros-clearbot-release
       - name: Debian file
         id: deb-file-name
         run: |
           cd .. && echo DEB_FILE="$(pwd)/$(find . -name "ros-foxy-clearbot-realsense2-camera*.deb" | sed -r 's/^.{2}//')" >> "$GITHUB_OUTPUT"
-        working-directory: ./realsense2_camera
+        working-directory: ./realsense-ros-clearbot-release
       - name: Export deb file artifact
         uses: actions/upload-artifact@v3
         with:
