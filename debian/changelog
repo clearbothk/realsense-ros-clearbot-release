@@ -1,3 +1,9 @@
+ros-foxy-clearbot-realsense2-camera (4.52.0-0focal) focal; urgency=medium
+
+  * Remove cv_bridge from the installation
+
+ -- clearbot <clearbot@dev>  Fri, 19 Apr 2024 17:26:38 +0800
+
 ros-foxy-clearbot-realsense2-camera (4.51.1-1focal) focal; urgency=high
 
   * Fix crash when activating IMU & aligned depth together
