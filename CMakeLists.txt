@@ -89,7 +89,6 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
-find_package(cv_bridge REQUIRED)
 find_package(image_transport REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_components REQUIRED)
@@ -108,6 +107,9 @@ endif()
 
 #set(CMAKE_NO_SYSTEM_FROM_IMPORTED true)
 include_directories(include)
+
+find_package (OpenCV 4.5.5 REQUIRED)
+include_directories ("/usr/include/opencv4/")
 
 set(node_plugins "")
 
@@ -192,7 +194,6 @@ target_link_libraries(${PROJECT_NAME}
     )
 
 set(dependencies
-  cv_bridge
   image_transport
   rclcpp
   rclcpp_components

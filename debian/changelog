@@ -1,4 +1,4 @@
-ros-foxy-realsense2-camera (4.51.1-1focal) focal; urgency=high
+ros-foxy-clearbot-realsense2-camera (4.51.1-1focal) focal; urgency=high
 
   * Fix crash when activating IMU & aligned depth together
   * Fix rosbag device loading by preventing set_option to HDR/Gain/Exposure
@@ -15,14 +15,14 @@ ros-foxy-realsense2-camera (4.51.1-1focal) focal; urgency=high
 
  -- LibRealSense ROS Team <librs.ros@intel.com>  Mon, 12 Sep 2022 21:00:00 -0000
 
-ros-foxy-realsense2-camera (4.0.4-1focal) focal; urgency=high
+ros-foxy-clearbot-realsense2-camera (4.0.4-1focal) focal; urgency=high
 
   * fix required packages for building debians for ros2-beta branch
   * Contributors: NirAz
 
  -- LibRealSense ROS Team <librs.ros@intel.com>  Sat, 19 Mar 2022 22:00:00 -0000
 
-ros-foxy-realsense2-camera (4.0.3-1focal) focal; urgency=high
+ros-foxy-clearbot-realsense2-camera (4.0.3-1focal) focal; urgency=high
 
   * Support intra-process zero-copy
   * Update README
@@ -32,7 +32,7 @@ ros-foxy-realsense2-camera (4.0.3-1focal) focal; urgency=high
 
  -- LibRealSense ROS Team <librs.ros@intel.com>  Tue, 15 Mar 2022 22:00:00 -0000
 
-ros-foxy-realsense2-camera (4.0.2-1focal) focal; urgency=high
+ros-foxy-clearbot-realsense2-camera (4.0.2-1focal) focal; urgency=high
 
   * version 4.4.0 changed to 4.0.0 in CHANGELOG
   * add frequency monitoring to /diagnostics topic.
@@ -47,7 +47,7 @@ ros-foxy-realsense2-camera (4.0.2-1focal) focal; urgency=high
 
  -- Doron Hirshberg <doron.hirshberg@intel.com>  Wed, 23 Feb 2022 22:00:00 -0000
 
-ros-foxy-realsense2-camera (4.0.1-1focal) focal; urgency=high
+ros-foxy-clearbot-realsense2-camera (4.0.1-1focal) focal; urgency=high
 
   * fix reset issue when multiple devices are connected
   * fix /rosout issue
@@ -62,7 +62,7 @@ ros-foxy-realsense2-camera (4.0.1-1focal) focal; urgency=high
 
  -- Doron Hirshberg <doron.hirshberg@intel.com>  Mon, 31 Jan 2022 22:00:00 -0000
 
-ros-foxy-realsense2-camera (4.0.0-1focal) focal; urgency=high
+ros-foxy-clearbot-realsense2-camera (4.0.0-1focal) focal; urgency=high
 
   * changed parameters:
     - "stereo_module", "l500_depth_sensor" are replaced by "depth_module"
