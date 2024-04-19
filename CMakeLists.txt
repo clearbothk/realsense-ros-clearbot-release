@@ -108,6 +108,9 @@ endif()
 #set(CMAKE_NO_SYSTEM_FROM_IMPORTED true)
 include_directories(include)
 
+find_package (OpenCV 4.5.5 REQUIRED)
+include_directories ("/usr/include/opencv4/")
+
 set(node_plugins "")
 
 set(SOURCES
